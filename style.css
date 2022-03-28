@@ -1,3 +1,50 @@
-body{
-    background-color: azure;
+:root {
+    --dark: rgba(30, 28, 28, 0.91);
+    --dark80: rgba(30, 28, 28, 0.8);
+    --light_blue: #7c96f7;
+    --yellow: #ffba08;
+    --white: #ffffff;
 }
+@font-face {
+    font-family: samim;
+    src: url(font/Samim.woff);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--dark);
+    direction: rtl;
+    font-family: samim;
+}
+
+/*stat header*/
+header{
+    min-height: 232px;
+    background-image: url(images/Header\ Background.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 60px 45px 0px 0px;
+}
+.menu ul li{
+    display: inline;
+    color: var(--dark80);
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 32px;
+}
+
+
+a{
+    text-decoration: unset;
+    color: inherit;
+}
+/*end header*/
