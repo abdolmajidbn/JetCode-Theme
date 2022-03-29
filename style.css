@@ -38,8 +38,12 @@ header{
     display: inline;
     color: var(--dark80);
     font-size: 24px;
-    font-weight: 400;
+    font-weight: bold;
     margin-left: 32px;
+}
+
+.menu ul li a:hover{
+    color: var(--light_blue);
 }
 
 
