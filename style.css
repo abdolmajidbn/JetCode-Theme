@@ -1,6 +1,7 @@
 :root {
     --dark: rgba(30, 28, 28, 0.91);
     --dark80: rgba(30, 28, 28, 0.8);
+    --dark70:rgba(30, 28, 28, 0.7);
     --light_blue: #7c96f7;
     --yellow: #ffba08;
     --white: #ffffff;
@@ -108,3 +109,74 @@ a{
     margin-right: 16px;
     font-weight: bold;
 }
+/* end intro */
+
+/* start about */
+.about{
+    background-image: url(images/About_Background.png);
+    background-repeat: no-repeat;
+    min-height: 450px;
+    margin-top: 40px;
+    padding: 58px 0px 0px 0px;
+}
+.about .rap{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+}
+.about img{
+    max-height: 350px;
+}
+
+.about .btn_and_text{
+    width: 445px;
+    margin-right: 70px;
+    margin-left: 150px;
+}
+.about .title{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--dark80);
+}
+.about .description{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: justify;
+    margin-bottom: 40px;
+    color: var(--dark70);
+}
+.about .btns_about{
+    display: flex;
+}
+.about .btn_resume{
+    background-color: rgba(30, 28, 28, 1);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 2px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: fit-content;
+}
+.about .btn_resume img{
+    margin-left: 10px;
+}
+
+.about .btn_connection{
+    border: solid 1px rgba(30, 28, 28, 1);
+    border-radius: 5px;
+    padding: 2px 12px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* end about */
+
+/* start blog home page */
