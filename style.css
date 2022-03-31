@@ -117,7 +117,7 @@ a{
     background-repeat: no-repeat;
     min-height: 450px;
     margin-top: 40px;
-    padding: 58px 0px 0px 0px;
+    padding: 58px 0px 200px 0px;
 }
 .about .rap{
     display: flex;
@@ -180,3 +180,27 @@ a{
 /* end about */
 
 /* start blog home page */
+.recent_post{
+    background-image: url(images/Wave\ Background.png);
+    margin-bottom: 500px;
+    min-height: 999px;
+    position: relative;
+    bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.recent_post .card .card_header{
+    position: relative;
+}
+.recent_post .title_card{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: right;
+}
