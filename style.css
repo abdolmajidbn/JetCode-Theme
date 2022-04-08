@@ -6,6 +6,7 @@
     --yellow: #ffba08;
     --white: #ffffff;
     --smoke_white: #F0F0F0;
+    --white80:rgba(255, 255, 255, 0.8);
 }
 @font-face {
     font-family: samim;
@@ -280,29 +281,39 @@ a{
 }
 /* end recent_post */
 /* stat tutorials */
+.tutorials{
+    background-image: url(images/blog_\ Background.png);
+    background-position: bottom;
+    margin-top: -400px;
+    padding: 182px 0px;
+}
 .tutorials .title{
     font-weight: 700;
     font-size: 40px;
     color: #1E1C1C;
     margin-right: 73px;
+    margin-bottom: 48px;
 }
 .tutorials .container{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0px 40px;
 }
 .tutorials .cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: 40px;
+    width: 50%;
+    justify-content: space-between;
 }
 
 .tutorials .card{
-    max-width: 222px;
+    width: 49%;
     background-color: var(--white);
     box-shadow: 0px 37px 40px rgb(50 45 45 / 32%);
     border-radius: 10px;
-    margin: 18px;
-    max-height: 224px;
+    margin-bottom: 40px;
 } 
 .tutorials .thmubnail{
     width: 100%;
@@ -322,7 +333,7 @@ a{
 
 .tutorials .price_tag{
     color: #6C63FF;
-    padding:0px 8px 15px 0px;
+    padding:0px 8px 0px 0px;
     font-weight: 700;
     font-size: 16px;
 }
@@ -332,6 +343,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 40px;
 }
 
 .heroic_title{
@@ -347,4 +359,61 @@ a{
     font-weight: 700;
     font-size: 24px;
     border-radius: 5px;
+}
+
+/* end tutorials */
+
+/* start footer */
+footer section{
+    display: flex;
+    flex-direction: row;
+    margin: 200px 70px 124px 70px;
+    justify-content: space-between;
+}
+.about_me,
+.contact,
+.quick_access{
+    width: 31%;
+}
+.about_me p,
+.contact p,
+.quick_access a{
+    color: var(--white80);
+    line-height: 38px;
+    font-weight: 400;
+    font-size: 24px;
+}
+.quick_access a{
+    display: block;
+    margin-bottom: 10px;
+}
+footer .title{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 24px;
+}
+.contact .icon img{
+    margin-right: 15px;
+}
+.contact .rap{
+    direction: ltr;
+    margin-left: 5%;
+
+}
+.contact p{
+    margin-top: 21px;
+}
+footer h4{
+   border-bottom: #FFBA08 dashed 2px;
+    width: 70%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: var(--white);
 }
