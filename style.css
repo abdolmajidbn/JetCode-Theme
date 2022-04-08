@@ -182,14 +182,17 @@ a{
 /* start blog home page */
 .recent_post{
     background-image: url(images/Wave\ Background.png);
-    margin-bottom: 500px;
-    /* min-height: 999px; */
     position: relative;
     bottom: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 40px;
 }
 .recent_post .title{
     margin: 297px 0px 60px 0px;
@@ -202,7 +205,9 @@ a{
     background: #FFFFFF;
     box-shadow: 0px 10px 40px rgba(59, 59, 60, 0.1);
     border-radius: 8px;
+    margin-left: 40px;
 }
+
 .card_header .overlay{
     background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5) 60%, #111111 100%);
     position: absolute;
@@ -272,4 +277,74 @@ a{
     font-weight: 700;
     font-size: 18px;
     margin: 90px 0px 200px 0px;
+}
+/* end recent_post */
+/* stat tutorials */
+.tutorials .title{
+    font-weight: 700;
+    font-size: 40px;
+    color: #1E1C1C;
+    margin-right: 73px;
+}
+.tutorials .container{
+    display: flex;
+}
+.tutorials .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+.tutorials .card{
+    max-width: 222px;
+    background-color: var(--white);
+    box-shadow: 0px 37px 40px rgb(50 45 45 / 32%);
+    border-radius: 10px;
+    margin: 18px;
+    max-height: 224px;
+} 
+.tutorials .thmubnail{
+    width: 100%;
+    padding: 8px;
+}
+.tutorials .thmubnail img{
+    width: 100%;
+    border-radius: 8px;
+
+}
+.tutorials .card_title{
+    margin: 8px 8px 8px 0px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1E1C1C;
+}
+
+.tutorials .price_tag{
+    color: #6C63FF;
+    padding:0px 8px 15px 0px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.heroic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroic_title{
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+.heroic a{
+    background-color:#1E1C1C ;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
 }
