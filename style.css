@@ -363,6 +363,53 @@ a{
 
 /* end tutorials */
 
+/* start potcast */
+.potcast{
+    padding: 0px 45px;
+}
+.potcast .rap{
+    display: flex;
+    align-items: center;
+}
+.potcast .right{
+    max-width: 633px;
+}
+.potcast .title{
+    font-weight: 400;
+    font-size: 50px;
+    color: #e0e0e0;
+    margin-bottom: 34px;
+}
+.potcast .description{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.potcast .icon{
+    margin-bottom: 30px;
+}
+.potcast .btn{
+    
+    background-color: var(--yellow);
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    width: fit-content;
+    border-radius: 5px;
+}
+.potcast .btn img{
+    margin: auto 10px auto 0px;
+}
+
+.potcast .icon a{
+    margin-left: 13px;
+}
+/* end potcast */
+
 
 /* start 404 page */
 .page_404{
