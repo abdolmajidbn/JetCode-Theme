@@ -1,5 +1,5 @@
 :root {
-    --dark: rgba(30, 28, 28, 0.91);
+    --dark: rgba(49, 46, 46, 1);
     --dark80: rgba(30, 28, 28, 0.8);
     --dark70:rgba(30, 28, 28, 0.7);
     --light_blue: #7c96f7;
@@ -282,8 +282,7 @@ a{
 /* end recent_post */
 /* stat tutorials */
 .tutorials{
-    background-image: url(images/blog_\ Background.png);
-    background-position: bottom;
+    background-color: rgba(251, 251, 251, 1);
     margin-top: -400px;
     padding: 182px 0px;
 }
@@ -449,12 +448,17 @@ a{
 
 /* start footer */
 footer{
-    background-image: url(images/bg_dark.png);
+    background-image: url(images/footerwave.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-top: -65px;
 }
 footer section{
     display: flex;
     flex-direction: row;
-    margin: 200px 70px 124px 70px;
+    margin: 100px 70px 124px 70px;
     justify-content: space-between;
 }
 .about_me,
