@@ -210,7 +210,8 @@ a{
     justify-content: space-between;
 }
 .recent_post .card,
-.blog .card
+.blog .card,
+.category .card
 {
     max-width: 350px;
     background: #FFFFFF;
@@ -228,30 +229,35 @@ a{
     height: 264px;
 }
 .recent_post .card_header img,
-.blog .card_header img
+.blog .card_header img,
+.category .card_header img
 {
     width: 100%;
     height: 264px;
     border-radius: 8px 8px 0px 0px;
 }
 .recent_post .card .card_header,
-.blog .card .card_header
+.blog .card .card_header,
+.category .card .card_header
 {
     position: relative;
     width: 100%;
 }
 .recent_post .card_body,
-.blog .card_body
+.blog .card_body,
+.category .card_body
 {
     border-bottom: 1px solid rgba(181, 165, 165, 0.58);
 }
 .recent_post .card_body section,
-.blog .card_body section
+.blog .card_body section,
+.category .card_body section
 {
     margin: 22px 10px 15px 0px;
 }
 .recent_post .description,
-.blog .card .description
+.blog .card .description,
+.category .card .description
 {
     margin: 0px 12px 15px 12px;
     font-weight: 400;
@@ -268,7 +274,8 @@ a{
     margin-left: 10px
 }
 .recent_post .title_card,
-.blog .title_card
+.blog .title_card,
+.category .title_card
 {
     position: absolute;
     right: 10px;
@@ -280,19 +287,22 @@ a{
     text-align: right;
 }
 .recent_post .card_footer,
-.blog .card_footer
+.blog .card_footer,
+.category .card_footer
 {
     padding: 10px 12px 15px 0px;
 }
 .recent_post .card_footer .veiw,
-.blog .card_footer .veiw
+.blog .card_footer .veiw,
+.category .card_footer .veiw
 {
     color: var(--dark80);
     font-weight: 400;
     font-size: 15px;
 }
 .recent_post .card_footer .veiw::before,
-.blog .card_footer .veiw::before
+.blog .card_footer .veiw::before,
+.category .card_footer .veiw::before
 {
     content: url(images/Eye.png);
     margin-left: 10px;
@@ -308,11 +318,21 @@ a{
     margin: 90px 0px 200px 0px;
 }
 /* end recent_post */
-/* start blog page */ 
 
-.blog{
-    margin-bottom: 200px;
+/* start blog page and category*/ 
+
+.blog,
+.category
+{
+    margin-bottom: 182px;
     margin-top: 80px;
+}
+.category .title{
+    color: var(--dark80);
+    font-weight: 400;
+    font-size: 40px;
+    margin-right: 40px;
+    margin-bottom: 65px;
 }
 .custom_btn{
     display: flex;
@@ -337,8 +357,8 @@ a{
     margin-top: 20px;
 }
 .order-by-box{
-    margin-right: 182px;
-    margin-bottom: 49px;
+    margin-right: 40px;
+    margin-bottom: 90px;
 }
 label.order{
     font-size: 24px;
@@ -357,9 +377,21 @@ select.order{
     color: var(--dark);
 }
 
-.blog .card{
+.blog .card,
+.category .card
+{
     margin-bottom: 90px;
 }
+
+.blog .btn,
+.category .btn
+{
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto;
+}
+
+/* end blog and category */
 
 /* stat tutorials */
 .tutorials{
@@ -471,7 +503,10 @@ select.order{
 .podcast .icon{
     margin-bottom: 30px;
 }
-.podcast .btn{
+.podcast .btn,
+.blog .btn,
+.category .btn
+{
     color:#1E1C1C;
     background-color: var(--yellow);
     font-weight: bold;
@@ -481,7 +516,10 @@ select.order{
     width: fit-content;
     border-radius: 5px;
 }
-.podcast .btn img{
+.podcast .btn img,
+.blog .btn img,
+.category .btn img
+{
     margin: auto 10px auto 0px;
 }
 
