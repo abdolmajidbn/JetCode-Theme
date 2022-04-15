@@ -17,6 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "samim";
 }
 
 body{
@@ -541,12 +542,223 @@ select.order{
 }
 
 /* end podcast */
+/* start post page */
 
+.post{
+    padding: 26px;
+    margin-bottom: 182px;
+}
 
+.row{
+    display: flex;
+}
+.post article{
+    max-width: 70%;
+    margin-left: 28px;
+    padding-bottom: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 30px rgb(204 204 204 / 70%);
+    border-radius: 10px;
+}
+.post_header {
+    padding: 56px 46px 41px 0px;
+    background: #7c96f7;
+    border-radius: 10px 10px 0px 0px;
+}
+.post_title {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    margin: revert;
+}
+.post_content {
+    padding: 30px 26px 20px 26px;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: right;
+    color: var(--dark);
+}
+.post_content p{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
 
+.comments{
+    background-color: var(--light_blue);
+    box-shadow: 0px 4px 30px rgb(204 204 204 / 70%);
+    border-radius: 10px;
+    margin: 0px 20px;
+}
 
+.comment_form {
+    justify-content: space-between;
+    padding: 34px 20px 0px 34px;
+    font-size: 24px;
+    line-height: 37px;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+.comment_form form {
+    width: 70%;
+}
+.comment_form .row {
+    justify-content: space-between;
+}
+.comment_form input, textarea {
+    background: #ffffff;
+    border: 2px solid #7c96f7;
+    border-radius: 10px;
+    outline: unset;
+    margin: 0px 10px 0px 22px;
+    font-size: 18px;
+    font-family: inherit;
+    padding: 5px 10px;
+    min-width: 80%;
+}
 
+.comment_form textarea {
+    min-height: 201px;
+    max-height: 501px;
+    max-width: 80%;
+}
 
+.comment_form .row:not(:first-child) {
+    margin-top: 22px;
+}
+.comment_form .row:last-child {
+    flex-direction: row-reverse !important;
+}
+
+.comment_form .btn,
+.more_comment_btn
+{
+    min-width: 116px;
+    font-size: 14px;
+    min-height: 38px;
+    background-color: var(--yellow);
+    font-weight: bold;
+    color: var(--dark80);
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment_illustration{
+    max-width: 175px;
+}
+.comment .row {
+    align-items: center;
+}
+.comments_list ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.comment {
+    transition: display 0.5s;
+    display: initial;
+    max-width: 456px;
+    min-width: 256px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 30px rgb(204 204 204 / 70%);
+    border-radius: 10px;
+    padding: 13px 20px;
+    margin: 15px 25px 0px 25px;
+    position: relative;
+}
+
+.user_avatar {
+    height: 44px;
+    border-radius: 50%;
+}
+.comment_title {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+    color: var(--dark80);
+    max-width: none;
+}
+
+.comment_date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    background-color: var(--light_blue);
+    padding: 3px 5px;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--white);
+}
+
+.comment_text p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+    margin: revert;
+}
+.comments_list ul li:nth-child(even) {
+    align-self: flex-end;
+}
+
+.reply{
+    width: 456px;
+    min-width: unset;
+    margin: 0px;
+}
+.more_comment_row{
+    justify-content: center;
+}
+
+.more_comment_btn{
+    margin: 41px 0px 19px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more_comment_btn img{
+    margin-right: 6px;
+}
+aside{
+    max-width: 30%;
+}
+.widget {
+    box-shadow: 0px 4px 30px rgb(204 204 204 / 70%);
+    border-radius: 10px;
+    background-color: var(--white);
+    margin-bottom: 15px;
+}
+.widget_title {
+    padding: 22px 15px;
+    background-color: var(--light_blue);
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--white);
+}
+.widget_body {
+    padding: 15px;
+}
+.widget_body .badge {
+    font-size: 13px;
+}
+.widget_body p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: right;
+    color: var(--dark80);
+    margin: 10px 0px 20px 0px;
+}
+.widget_body ul{
+    list-style: none;
+}
+.recentcomments .row{
+    align-items: center;
+}
 
 /* start 404 page */
 .page_404{
