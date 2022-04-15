@@ -756,8 +756,20 @@ aside{
 .widget_body ul{
     list-style: none;
 }
+.widget_body a img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 .recentcomments .row{
     align-items: center;
+}
+
+.recentcomments p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* start 404 page */
