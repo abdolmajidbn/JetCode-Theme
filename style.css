@@ -508,7 +508,7 @@ select.order{
     margin-bottom: 20px;
     text-align: justify;
 }
-.podcast_container .icon{
+.podcast_container .icons{
     margin-bottom: 30px;
 }
 .podcast_container .btn,
@@ -531,7 +531,7 @@ select.order{
     margin: auto 10px auto 0px;
 }
 
-.podcast_container .icon a{
+.podcast_container .icons a{
     margin-left: 13px;
 }
 .podcast_container .microphone{
