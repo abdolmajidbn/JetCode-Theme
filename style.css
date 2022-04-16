@@ -30,6 +30,10 @@ body{
     background-color: var(--bg_light) !important;
 }
 
+.bg_white{
+    background-color: var(--white) !important;
+}
+
 /*stat header*/
 header{
     min-height: 232px;
