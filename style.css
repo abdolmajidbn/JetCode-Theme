@@ -358,6 +358,9 @@ a{
     font-size: 24px;
     font-weight: bold;
 }
+.custom_btn a:last-child{
+    margin-left: 0px !important;
+}
 .custom_btn span{
     margin-top: 20px;
 }
