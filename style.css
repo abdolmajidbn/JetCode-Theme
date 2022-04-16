@@ -215,8 +215,8 @@ a{
     justify-content: space-between;
 }
 .recent_post .card,
-.blog .card,
-.category .card
+.blog_container .card,
+.category_container .card
 {
     max-width: 350px;
     background: #FFFFFF;
@@ -234,35 +234,35 @@ a{
     height: 264px;
 }
 .recent_post .card_header img,
-.blog .card_header img,
-.category .card_header img
+.blog_container .card_header img,
+.category_container .card_header img
 {
     width: 100%;
     height: 264px;
     border-radius: 8px 8px 0px 0px;
 }
 .recent_post .card .card_header,
-.blog .card .card_header,
-.category .card .card_header
+.blog_container .card .card_header,
+.category_container .card .card_header
 {
     position: relative;
     width: 100%;
 }
 .recent_post .card_body,
-.blog .card_body,
-.category .card_body
+.blog_container .card_body,
+.category_container .card_body
 {
     border-bottom: 1px solid rgba(181, 165, 165, 0.58);
 }
 .recent_post .card_body section,
-.blog .card_body section,
-.category .card_body section
+.blog_container .card_body section,
+.category_container .card_body section
 {
     margin: 22px 10px 15px 0px;
 }
 .recent_post .description,
-.blog .card .description,
-.category .card .description
+.blog_container .card .description,
+.category_container .card .description
 {
     margin: 0px 12px 15px 12px;
     font-weight: 400;
@@ -279,8 +279,8 @@ a{
     margin-left: 10px
 }
 .recent_post .title_card,
-.blog .title_card,
-.category .title_card
+.blog_container .title_card,
+.category_container .title_card
 {
     position: absolute;
     right: 10px;
@@ -292,22 +292,22 @@ a{
     text-align: right;
 }
 .recent_post .card_footer,
-.blog .card_footer,
-.category .card_footer
+.blog_container .card_footer,
+.category_container .card_footer
 {
     padding: 10px 12px 15px 0px;
 }
 .recent_post .card_footer .veiw,
-.blog .card_footer .veiw,
-.category .card_footer .veiw
+.blog_container .card_footer .veiw,
+.category_container .card_footer .veiw
 {
     color: var(--dark80);
     font-weight: 400;
     font-size: 15px;
 }
 .recent_post .card_footer .veiw::before,
-.blog .card_footer .veiw::before,
-.category .card_footer .veiw::before
+.blog_container .card_footer .veiw::before,
+.category_container .card_footer .veiw::before
 {
     content: url(images/Eye.png);
     margin-left: 10px;
@@ -326,13 +326,13 @@ a{
 
 /* start blog page and category*/ 
 
-.blog,
-.category
+.blog_container,
+.category_container
 {
     margin-bottom: 182px;
     margin-top: 80px;
 }
-.category .title{
+.category_container .title{
     color: var(--dark80);
     font-weight: 400;
     font-size: 40px;
@@ -382,14 +382,14 @@ select.order{
     color: var(--dark);
 }
 
-.blog .card,
-.category .card
+.blog_container .card,
+.category_container .card
 {
     margin-bottom: 90px;
 }
 
-.blog .btn,
-.category .btn
+.blog_container .btn,
+.category_container .btn
 {
     font-size: 14px;
     font-weight: 500;
@@ -481,23 +481,23 @@ select.order{
 /* end tutorials */
 
 /* start podcast */
-.podcast{
+.podcast_container{
     padding: 0px 45px;
 }
-.podcast .rap{
+.podcast_container .rap{
     display: flex;
     align-items: center;
 }
-.podcast .right{
+.podcast_container .right{
     max-width: 633px;
 }
-.podcast .title{
+.podcast_container .title{
     font-weight: 400;
     font-size: 50px;
     color: #e0e0e0;
     margin-bottom: 34px;
 }
-.podcast .description{
+.podcast_container .description{
     font-weight: 500;
     font-size: 24px;
     line-height: 38px;
@@ -505,12 +505,12 @@ select.order{
     margin-bottom: 20px;
     text-align: justify;
 }
-.podcast .icon{
+.podcast_container .icon{
     margin-bottom: 30px;
 }
-.podcast .btn,
-.blog .btn,
-.category .btn
+.podcast_container .btn,
+.blog_container .btn,
+.category_container .btn
 {
     color:#1E1C1C;
     background-color: var(--yellow);
@@ -521,17 +521,17 @@ select.order{
     width: fit-content;
     border-radius: 5px;
 }
-.podcast .btn img,
-.blog .btn img,
-.category .btn img
+.podcast_container .btn img,
+.blog_container .btn img,
+.category_container .btn img
 {
     margin: auto 10px auto 0px;
 }
 
-.podcast .icon a{
+.podcast_container .icon a{
     margin-left: 13px;
 }
-.podcast .microphone{
+.podcast_container .microphone{
     position: absolute;
     left: 60px;
     top: 0px;
@@ -548,7 +548,7 @@ select.order{
 /* end podcast */
 /* start post page */
 
-.post{
+.post_container{
     padding: 26px;
     margin-bottom: 182px;
 }
@@ -556,7 +556,7 @@ select.order{
 .row{
     display: flex;
 }
-.post article{
+.post_container article{
     max-width: 70%;
     margin-left: 28px;
     padding-bottom: 20px;
