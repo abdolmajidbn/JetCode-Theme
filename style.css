@@ -424,20 +424,24 @@ select.order{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
-    justify-content: space-between;
+    width: 60%;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 20px;
 }
 
 .tutorials .card{
-    width: 49%;
+    width: 48%;
+    max-width: 350px;
+    padding: 10px;
     background-color: var(--white);
     box-shadow: 0px 37px 40px rgb(50 45 45 / 32%);
     border-radius: 10px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 } 
 .tutorials .thmubnail{
     width: 100%;
-    padding: 8px;
+    /* padding: 8px; */
 }
 .tutorials .thmubnail img{
     width: 100%;
@@ -460,17 +464,22 @@ select.order{
 
 .heroic{
     display: flex;
+    flex: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: 40px;
+}
+.heroic img{
+    width: 90%;
+    max-width: 430px;
 }
 
 .heroic_title{
     color: var(--yellow);
     font-weight: 700;
     font-size: 30px;
-    margin: 20px 0px;
+    margin: revert;
 }
 .heroic a{
     background-color:#1E1C1C ;
