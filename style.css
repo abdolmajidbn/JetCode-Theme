@@ -100,7 +100,9 @@ a{
     margin-bottom: 35px;
     font-size: 30px;
 }
-
+.intro .row{
+    margin-bottom: 140px;
+}
 .intro .secondary_btn{
     color: var(--white);
     border: solid 2px var(--light_blue);
