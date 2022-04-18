@@ -73,6 +73,7 @@ a{
     display: flex;
     flex-direction: row;
     margin-top: 15px;
+    overflow-x: hidden;
 
 }
 
@@ -86,6 +87,8 @@ a{
 }
 .intro .left{
     margin: 0px auto 0px 0px;
+    position: relative;
+    left: -50px;
 }
 .intro .left img{
     max-height: 250px;
