@@ -80,9 +80,6 @@ a{
 .intro .right{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* float: right; */
-    /* align-self: center; */
     margin: 0px 45px 0px 0px;
 }
 .intro .left{
@@ -881,3 +878,14 @@ footer h4{
     color: var(--white);
 }
 /* end footer */
+/* start media Queries */
+
+@media screen and (max-width: 1280px){
+    .intro .right{
+        margin: 0px 22px 0px 0px;
+    }
+    .intro .left img {
+        max-height: 200px;
+    }
+    
+}
