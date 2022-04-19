@@ -236,37 +236,22 @@ a{
     width: 100%;
     height: 264px;
 }
-.recent_post .card_header img,
-.blog_container .card_header img,
-.category_container .card_header img
-{
+.card_header{
+    position: relative;
+    width: 100%;
+}
+.card_header img{
     width: 100%;
     height: 264px;
     border-radius: 8px 8px 0px 0px;
 }
-.recent_post .card .card_header,
-.blog_container .card .card_header,
-.category_container .card .card_header
-{
-    position: relative;
-    width: 100%;
-}
-.recent_post .card_body,
-.blog_container .card_body,
-.category_container .card_body
-{
+.card_body{
     border-bottom: 1px solid rgba(181, 165, 165, 0.58);
 }
-.recent_post .card_body section,
-.blog_container .card_body section,
-.category_container .card_body section
-{
+.card_body section{
     margin: 22px 10px 15px 0px;
 }
-.recent_post .description,
-.blog_container .card .description,
-.category_container .card .description
-{
+.card_body .description{
     margin: 0px 12px 15px 12px;
     font-weight: 400;
     font-size: 18px;
@@ -281,10 +266,7 @@ a{
     border-radius: 10px;
     margin-left: 10px
 }
-.recent_post .title_card,
-.blog_container .title_card,
-.category_container .title_card
-{
+.card_title{
     position: absolute;
     right: 10px;
     bottom: 20px;
@@ -294,24 +276,15 @@ a{
     line-height: 38px;
     text-align: right;
 }
-.recent_post .card_footer,
-.blog_container .card_footer,
-.category_container .card_footer
-{
+.card_footer{
     padding: 10px 12px 15px 0px;
 }
-.recent_post .card_footer .veiw,
-.blog_container .card_footer .veiw,
-.category_container .card_footer .veiw
-{
+.card_footer .veiw{
     color: var(--dark80);
     font-weight: 400;
     font-size: 15px;
 }
-.recent_post .card_footer .veiw::before,
-.blog_container .card_footer .veiw::before,
-.category_container .card_footer .veiw::before
-{
+.card_footer .veiw::before{
     content: url(images/Eye.png);
     margin-left: 10px;
 }
