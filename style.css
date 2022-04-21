@@ -868,3 +868,106 @@ footer h4{
     }
     
 }
+
+@media screen and (max-width: 479px){
+    header{
+        background-image: none;
+        min-height: unset;
+    }
+    .menu{
+        display: none;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        overflow: inherit;
+        margin-top: 68px;
+    }
+    .intro .left{
+        left: auto;
+        margin: 0px auto;
+    }
+    .intro .left img{
+        max-height: 98px;
+    }
+    .intro .right{
+        margin: auto;
+    }
+    .intro .title{
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .intro .subtitle{
+        font-size: 16px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .intro .secondary_btn{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 9px 29px;
+    }
+    .intro .primary_btn{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .intro .row{
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .about{
+        background-image: url(images/About_Background_mobile.png);
+        margin: 100px auto;
+        padding: 0px;
+        background-size: cover;
+        width: 100%;
+    }
+    .about .title{
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    .about .description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: right;
+    }
+    .about .row{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-right: 16px;
+        margin-top: 0px;
+    }
+    .about .right{
+        max-height: 154px;
+        /* margin: 54px 0px 0px 0px; */
+        margin: 0px;
+    }
+
+    .about .left{
+        width: auto;
+        margin: auto;
+    }
+    .about .btn_resume{
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .about .btn_resume img {
+        margin-left: 5px;
+    }
+    .about .btn_connection{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 16px;
+
+    }
+
+}
