@@ -1001,7 +1001,7 @@ footer h4{
         margin: 187px auto 40px auto;
     }
     .recent_post .btn{
-        margin: 20px auto 140px auto;
+        margin: 5px auto 140px auto;
         padding: 12px 20px;
         font-size: 16px;
         font-weight: 500;
@@ -1011,15 +1011,18 @@ footer h4{
     .posts{
         margin: auto;
         flex-wrap: nowrap;
-        margin-right: 15px;
-        /* gap: 15px; */
+        padding: 0px 15px;
         width: 100vw;
         overflow-x: scroll;
     }
     .card{
         width: auto;
         min-width: 250px;
-        margin-left: 10px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    .card:last-child{
+        margin-left: 0px;
     }
     .card_body{
         border-bottom: unset;
