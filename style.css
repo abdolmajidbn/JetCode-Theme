@@ -846,7 +846,7 @@ footer h4{
     margin-bottom: 30px;
 }
 .quick_access h4{
-    width: 100% !important;
+    width: 100%;
 }
 .copyright{
     text-align: center;
@@ -1110,26 +1110,57 @@ footer h4{
 
 
     footer{
-        background-image: none;
-        margin-top: unset;
-        padding-bottom: 200px;
+        background-image: url(images/footerwave_mobile.png);
+        background-size: 100% 100%;
+        /* margin-top: unset; */
+        /* padding-bottom: 200px; */
     }
     footer section{
-        margin-top: 0px;
+        margin-top: 70px;
         justify-content: unset;
         width: 100vw;
     }
     .about_me,.contact,.quick_access{
         width: 100vw;
         margin: 0px;
+        max-width: unset;
     }
+    .about_me p,.contact p,.quick_access a{
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0px 16px;
+    }
+    .contact .icon img {
+        margin-right: 7px;
+    }
+    .contact p a:first-child{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .quick_access .links a{
+        font-size: 14px;
+    }
+    .quick_access .links a:not(:last-child){
+        margin-bottom: 16px; 
+    }
+        
     footer .title{
-        width: 100vw;
+        width: auto;
         font-size: 16px;
         padding-bottom: 16px;
-        margin-bottom: 16px;
+        margin: 16px 16px;
     }
-    /* footer .title::before{
-        content: ;
-    } */
+    footer .ltr .icon{
+        margin-left: 16px;
+        margin-bottom: 10px;
+    }
+    .copyright{
+        margin-top: 32px;
+    }
+    .copyright p{
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+
 }
