@@ -991,8 +991,8 @@ footer h4{
         background-image: url(images/Recent_postBackground_mobile.png);
         bottom: 170px;
         background-repeat: no-repeat;
-        background-size: contain;
-        overflow: hidden;
+        background-size: 100% 100%;
+        /* overflow: hidden; */
     }
     .recent_post .title{
         font-weight: 700;
@@ -1012,6 +1012,8 @@ footer h4{
         flex-wrap: nowrap;
         margin-right: 15px;
         gap: 15px;
+        width: 100vw;
+        overflow-x: scroll;
     }
     .card{
         width: auto;
