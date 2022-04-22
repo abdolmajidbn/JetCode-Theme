@@ -944,7 +944,7 @@ footer h4{
     }
     .about .title{
         font-size: 25px;
-        font-weight: 400;
+        font-weight: 700;
         margin-bottom: 8px;
     }
     .about .description{
@@ -995,7 +995,7 @@ footer h4{
         overflow: hidden;
     }
     .recent_post .title{
-        font-weight: 400;
+        font-weight: 700;
         font-size: 25px;
         margin: 187px auto 40px auto;
     }
