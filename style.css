@@ -396,6 +396,7 @@ select.order{
     width: 100%;
     justify-content: center;
     padding: 0px 40px;
+    flex-wrap: wrap-reverse;
 }
 .mini_cards {
     display: flex;
@@ -796,7 +797,7 @@ footer{
 footer section{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
 }
@@ -870,6 +871,15 @@ footer h4{
 }
 
 @media screen and (max-width: 479px){
+    .overlay{
+        height: 189px;
+    }
+    .badge{
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 5px;
+    }
+    /* header in mobile */
     header{
         background-image: none;
         min-height: unset;
@@ -877,6 +887,9 @@ footer h4{
     .menu{
         display: none;
     }
+    /* end header in mobile */
+
+    /* intro in mobile */
     .intro{
         flex-direction: column-reverse;
         overflow: inherit;
@@ -920,11 +933,12 @@ footer h4{
         justify-content: center;
         margin-bottom: 0px;
     }
+    /* end intro in mobile */
 
+    /* about in mobile */
     .about{
         background-image: url(images/About_Background_mobile.png);
-        margin: 100px auto;
-        padding: 0px;
+        padding: 0px 0px 100px 0px;
         background-size: cover;
         width: 100%;
     }
@@ -937,23 +951,25 @@ footer h4{
         font-weight: 400;
         font-size: 16px;
         line-height: 25px;
-        text-align: right;
+        /* text-align: right; */
+        margin-bottom: 25px;
     }
     .about .row{
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-right: 16px;
-        margin-top: 0px;
+        margin: 0px 16px;
     }
     .about .right{
         max-height: 154px;
-        /* margin: 54px 0px 0px 0px; */
-        margin: 0px;
+        margin: 54px 0px 16px 0px;
     }
 
     .about .left{
         width: auto;
         margin: auto;
+    }
+    .about .btns{
+        justify-content: center;
     }
     .about .btn_resume{
         padding: 5px 10px;
@@ -968,6 +984,86 @@ footer h4{
         font-weight: 500;
         padding: 5px 16px;
 
+    }
+    /* end about in mobile */
+    /* recent_post in mobile */
+    .recent_post{
+        background-image: url(images/Recent_postBackground_mobile.png);
+        bottom: 170px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+    }
+    .recent_post .title{
+        font-weight: 400;
+        font-size: 25px;
+        margin: 187px auto 40px auto;
+    }
+    .recent_post .btn{
+        margin: 20px auto 140px auto;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    /* end recent_post */
+    /* start post & card in (recent_post & post page & category page) */
+    .posts{
+        margin: auto;
+        flex-wrap: nowrap;
+        margin-right: 15px;
+        gap: 15px;
+    }
+    .card{
+        width: auto;
+        min-width: 250px;
+    }
+    .card_body{
+        border-bottom: unset;
+        padding: 0px 10px 0px 10px;
+    }
+    .card_body section{
+        margin: 12px 0px 10px 0px;
+    }
+    .card_header img{
+        height: 189px;
+    }
+    .card_title{
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .card_body .description{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        color: #545454;
+        margin: 0px 0px 15px 0px;
+    }
+    .card_footer{
+        padding: 0px 10px 10px 0px;
+    }
+    .card_footer .veiw{
+        font-size: 12px;
+        color: rgba(84, 84, 84, 1);
+    }
+    .card_footer .veiw::before{
+        content: url(images/Eye_mobile.png);
+        margin-left: 3px;
+    }
+    /* end post & card in (recent_post & post page & category page) */
+    /* start tutorials */
+    .tutorials .container{
+        padding: 0px;
+    }
+    .tutorials .title{
+        margin: 30px auto;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .heroic{
+        flex: 100%;
+        margin: 0px;
     }
 
 }
