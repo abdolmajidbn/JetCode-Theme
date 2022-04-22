@@ -1012,13 +1012,14 @@ footer h4{
         margin: auto;
         flex-wrap: nowrap;
         margin-right: 15px;
-        gap: 15px;
+        /* gap: 15px; */
         width: 100vw;
         overflow-x: scroll;
     }
     .card{
         width: auto;
         min-width: 250px;
+        margin-left: 10px;
     }
     .card_body{
         border-bottom: unset;
