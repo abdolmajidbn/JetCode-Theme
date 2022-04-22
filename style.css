@@ -1020,6 +1020,7 @@ footer h4{
         min-width: 250px;
         margin-left: 15px;
         margin-bottom: 20px;
+        box-shadow: 0px 10px 15px rgb(59 59 60 / 10%);
     }
     .card:last-child{
         margin-left: 0px;
@@ -1072,5 +1073,63 @@ footer h4{
         flex: 100%;
         margin: 0px;
     }
+    .heroic img{
+        max-width: 250px;
+    }
+    .heroic_title{
+        font-size: 16px;
+        font-size: 16px;
+        margin: 24px auto;
+    }
 
+    .heroic a{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .mini_cards{
+        flex-wrap: nowrap;
+        width: 100vw;
+        gap: unset;
+        justify-content: unset;
+        align-content: unset;
+        overflow-x: scroll;
+        padding: 45px 16px;
+    }
+    .tutorial{
+        min-width: 250px;
+        margin-left: 8px;
+        padding: 8px;
+        box-shadow: 0px 15px 23px rgb(50 45 45 / 32%);
+    }
+    .tutorial:last-child{
+        margin-left: 0px;
+    }
+    .tutorial_title{
+        font-size: 16px;
+    }
+
+
+    footer{
+        background-image: none;
+        margin-top: unset;
+        padding-bottom: 200px;
+    }
+    footer section{
+        margin-top: 0px;
+        justify-content: unset;
+        width: 100vw;
+    }
+    .about_me,.contact,.quick_access{
+        width: 100vw;
+        margin: 0px;
+    }
+    footer .title{
+        width: 100vw;
+        font-size: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    /* footer .title::before{
+        content: ;
+    } */
 }
