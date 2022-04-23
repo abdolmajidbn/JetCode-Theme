@@ -1122,7 +1122,7 @@ footer h4{
     }
     .about_me,.contact,.quick_access{
         width: 100vw;
-        margin: 0px;
+        margin: 0px 0px 16px 0px;
         max-width: unset;
     }
     .about_me p,.contact p,.quick_access a{
