@@ -789,7 +789,7 @@ aside{
 /* start footer */
 footer{
     background-image: url(images/footerwave.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -861,7 +861,7 @@ footer h4{
 /* end footer */
 /* start media Queries */
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1200px){
     .intro .right{
         margin: 0px 22px 0px 0px;
     }
@@ -869,6 +869,14 @@ footer h4{
         max-height: 200px;
     }
     
+}
+@media screen and (max-width: 992px){
+    footer section{
+        padding: 0px 32px;
+    }
+    .contact{
+        margin: 0px 50px;
+    }
 }
 
 @media screen and (max-width: 479px){
@@ -1112,13 +1120,12 @@ footer h4{
     footer{
         background-image: url(images/footerwave_mobile.png);
         background-size: 100% 100%;
-        /* margin-top: unset; */
-        /* padding-bottom: 200px; */
     }
     footer section{
         margin-top: 70px;
         justify-content: unset;
         width: 100vw;
+        padding: 0px;
     }
     .about_me,.contact,.quick_access{
         width: 100vw;
