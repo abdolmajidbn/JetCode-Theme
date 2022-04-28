@@ -718,7 +718,7 @@ select.order{
 aside{
     max-width: 30%;
 }
-.widget {
+aside .widget {
     box-shadow: 0px 4px 30px rgb(204 204 204 / 70%);
     border-radius: 10px;
     background-color: var(--white);
@@ -798,56 +798,45 @@ footer{
 footer section{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
+    padding: 0px 70px;
+    column-gap: 100px;
 }
-.about_me,
-.contact{
-    width: 25%;
-    min-width: 300px;
-    max-width: 350px;
+footer .widget{
+    width: 31%;
 }
-.contact{
-    margin: 0px 100px;
+footer .widget .title{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 24px;
+    border-bottom: var(--yellow) dashed 2px;
+    width: 80%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 }
-.quick_access{
-    width: 17%;
-    max-width: 200px;
-}
-.about_me p,
-.contact p,
-.quick_access a{
+footer .widget p, footer .widget a{
     color: var(--white80);
     line-height: 38px;
     font-weight: 400;
     font-size: 24px;
 }
-.quick_access a{
+footer .widget .icons a{
+    margin-right: 15px;
+    line-height: 0px;
+    font-size: unset;
+}
+footer .widget p.content {
+    margin-top: 21px;
+}
+footer .widget p.content a{
+    display: block;
+}
+footer .links a{
     display: block;
     margin-bottom: 10px;
 }
-footer .title{
-    color: var(--white);
-    font-weight: 500;
-    font-size: 24px;
-}
-.contact .icon img{
-    margin-right: 15px;
-}
 
-.contact p{
-    margin-top: 21px;
-}
-footer h4{
-   border-bottom: var(--yellow) dashed 2px;
-    width: 70%;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-.quick_access h4{
-    width: 100%;
-}
 .copyright{
     text-align: center;
     
@@ -868,11 +857,19 @@ footer h4{
     .intro .left img {
         max-height: 200px;
     }
-    
+    footer section{
+        padding: 0px 50px;
+        column-gap: 70px;
+    }
+    footer .widget p, footer .widget a{
+        font-size: 21px;
+    }
+
 }
 @media screen and (max-width: 992px){
     footer section{
-        padding: 0px 32px;
+        padding: 0px 30px;
+        column-gap: 50px;
     }
     .contact{
         margin: 0px 50px;
@@ -1120,47 +1117,50 @@ footer h4{
     footer{
         background-image: url(images/footerwave_mobile.png);
         background-size: 100% 100%;
+        margin-bottom: 1000px;
     }
     footer section{
         margin-top: 70px;
         justify-content: unset;
         width: 100vw;
-        padding: 0px;
+        flex-wrap: wrap;
+        padding: 0px 16px;
     }
-    .about_me,.contact,.quick_access{
+    footer .widget{
         width: 100vw;
         margin: 0px 0px 16px 0px;
-        max-width: unset;
     }
-    .about_me p,.contact p,.quick_access a{
-        font-size: 12px;
-        line-height: 18px;
-        margin: 0px 16px;
-    }
-    .contact .icon img {
-        margin-right: 7px;
-    }
-    .contact p a:first-child{
-        display: block;
-        margin-bottom: 10px;
-    }
-    .quick_access .links a{
-        font-size: 14px;
-    }
-    .quick_access .links a:not(:last-child){
-        margin-bottom: 16px; 
-    }
-        
-    footer .title{
+    footer .widget .title{
         width: auto;
         font-size: 16px;
         padding-bottom: 16px;
-        margin: 16px 16px;
+        margin: 16px 0px;
     }
-    footer .ltr .icon{
-        margin-left: 16px;
+    footer .widget p, footer .widget a{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    footer .widget .icons{
         margin-bottom: 10px;
     }
+    footer .widget .icons a{
+        margin-right: 7px;
+    }
+    footer .widget p.content{
+        margin-top: 10px;
+    }
+    footer .widget p.content a:first-child{
+        margin-bottom: 10px;
+    }
+    footer .widget .links a{
+        font-size: 14px;
+    }
+    
+    footer .widget .links a:not(:last-child){
+        margin-bottom: 16px; 
+    }
+        
+
     .copyright{
         margin-top: 32px;
     }
