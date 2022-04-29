@@ -318,12 +318,12 @@ a{
     margin-right: 40px;
     margin-bottom: 65px;
 }
-.custom_btn{
+.custom_btns{
     display: flex;
     justify-content: center;
     margin-bottom: 115px;
 }
-.custom_btn a{
+.custom_btns a{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,10 +337,10 @@ a{
     font-size: 24px;
     font-weight: bold;
 }
-.custom_btn a:last-child{
+.custom_btns a:last-child{
     margin-left: 0px !important;
 }
-.custom_btn span{
+.custom_btns span{
     margin-top: 20px;
 }
 .order_by_box{
@@ -1126,7 +1126,43 @@ footer .links a{
         font-size: 16px;
     }
 
-
+    /* blog page and category */
+    .blog_container, .category_container{
+        margin-top: 32px;
+    }
+    .custom_btns{
+        padding: 0px 16px;
+        margin-bottom: 32px;
+    }
+    .custom_btns a{
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-left: 13px;
+        font-weight: 500;
+    }
+    .custom_btns img{
+        width: 38px;
+    }
+    .custom_btns span{
+        margin-top: 8px;
+    }
+    .order_by_box{
+        margin-right: 16px;
+        margin-bottom: 32px;
+    }
+    label.order{
+        font-size: 16px;
+        margin-left: 8px;
+    }
+    select.order{
+        border-radius: 10px;
+        font-size: 13px;
+        padding: 3px 8px;
+        min-width: auto;
+        min-height: auto;
+    }
     footer{
         background-image: url(images/footerwave_mobile.png);
         background-size: 100% 100%;
