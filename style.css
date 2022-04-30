@@ -270,14 +270,17 @@ a{
     margin-left: 10px
 }
 .card_title{
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
-    color: var(--white);
     font-weight: 700;
     font-size: 24px;
     line-height: 38px;
     text-align: right;
+}
+.recent_post .card_title{
+    color: var(--white);
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+
 }
 .card_footer{
     padding: 10px 12px 15px 0px;
@@ -367,8 +370,14 @@ select.order{
 .category_container .card
 {
     margin-bottom: 90px;
+    height: fit-content;
 }
+.blog_container .card_title,
+.category_container .card_title{
+    color: var(--dark);
+    margin: 15px 12px;
 
+}
 .blog_container .btn,
 .category_container .btn
 {
