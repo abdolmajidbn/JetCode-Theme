@@ -589,8 +589,7 @@ select.order{
     color: var(--dark);
 }
 .post_content p{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin: revert;
 }
 
 .comments{
@@ -1269,6 +1268,50 @@ footer .links a{
         box-shadow: 0px 4px 25px #000000;
     }
     /* end podcasts page */
+    /* post page */
+    .post_container{
+        padding: 10px;
+    }
+    .post_container .wrapper{
+        flex-wrap: wrap;
+    }
+    .post_container article{
+        margin-left: 0px;
+        max-width: 100%;
+    }
+    aside{
+        max-width: 100%;
+    }
+    .post_header{
+        padding: 56px 20px 41px 0px;
+    }
+    .post_title{
+        font-size: 25px;
+        margin-bottom: 15px;
+        line-height: 39px;
+    }
+    .post_content{
+        font-size: 16px;
+        padding: 20px;
+        line-height: 25px;
+    }
+    .comment_form form{
+        width: 100%;
+    }
+    .comments{
+        margin: 0px 5px;
+    }
+    .comment{
+        padding: 13px;
+        margin: 15px 15px 0px 15px;
+    }
+    .reply{
+        width: auto;
+    }
+    .comment_illustration{
+        display: none;
+    }
+    /* end post page */
     /* start footer */
     footer{
         background-image: url(images/footerwave_mobile.png);
