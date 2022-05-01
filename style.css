@@ -7,6 +7,7 @@
     --yellow: #ffba08;
     --white: #ffffff;
     --bg_light: rgba(236, 236, 236, 1);
+    --bg_light2:#fbfbfb;
     --smoke_white: #F0F0F0;
     --white80:rgba(255, 255, 255, 0.8);
 }
@@ -33,6 +34,7 @@ body{
 .bg_light{
     background-color: var(--bg_light) !important;
 }
+
 
 .bg_white{
     background-color: var(--white) !important;
@@ -531,7 +533,7 @@ select.order{
     margin: auto 10px auto 0px;
 }
 
-.podcast_container .icons a{
+.podcast_container .icons a:not(:last-child){
     margin-left: 13px;
 }
 .podcast_container .microphone{
@@ -1116,6 +1118,9 @@ footer .links a{
     }
     /* end post & card in (recent_post & post page & category page) */
     /* start tutorials */
+    .tutorials{
+        padding: 182px 0px 82px 0px;
+    }
     .tutorials .container{
         padding: 0px;
     }
@@ -1163,10 +1168,12 @@ footer .links a{
     .tutorial_title{
         font-size: 16px;
     }
+    /*end tutorials*/
 
     /* blog page and category */
     .blog_container, .category_container{
         margin-top: 32px;
+        margin-bottom: 127px;
     }
     .custom_btns{
         padding: 0px 16px;
@@ -1201,6 +1208,68 @@ footer .links a{
         min-width: auto;
         min-height: auto;
     }
+    /* End blog page and category */
+    /* podcasts page */
+    .podcast_container{
+        padding: 0px;
+        background-color: var(--bg_light2);
+    }
+    .podcast_container .title{
+        color: var(--dark1);
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+        margin: 15px auto 7px auto;
+    }
+    .podcast_container .description{
+        color: var(--dark80);
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0px 25px 16px 25px;
+    }
+    .podcast_container .icons{
+        margin-bottom: 20px;
+        padding: 0px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .podcast_container .btn{
+        font-size: 14px;
+        margin: 0px auto 37px auto;
+        font-weight: 500;
+    }
+    .podcast_container .row{
+        align-items: unset;
+        flex-wrap: wrap-reverse;
+    }
+    .podcast_container .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .podcast_container .microphone{
+        position: unset;
+        width: fit-content;
+        align-self: flex-end;
+        margin-left: 25px;
+        max-width: 95px;
+
+    }
+    .podcast_container .left img:last-child{
+        margin: 0px 60px;
+    }
+    .podcast_frame{
+        margin: 0px;
+        padding: 0px 24px 37px 24px;
+    }
+    .podcast_frame iframe{
+        box-shadow: 0px 4px 25px #000000;
+    }
+    /* end podcasts page */
+    /* start footer */
     footer{
         background-image: url(images/footerwave_mobile.png);
         background-size: 100% 100%;
@@ -1254,6 +1323,6 @@ footer .links a{
         font-size: 12px;
         margin-bottom: 8px;
     }
-
+    /*end footer*/
 
 }
