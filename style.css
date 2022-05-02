@@ -1544,6 +1544,9 @@ footer .links a{
     aside{
         max-width: 100%;
     }
+    aside .widget{
+        width: clamp(250px, calc(100% - 10px), 100%) !important;
+    }
     .post_header{
         padding: 56px 20px 41px 0px;
     }
