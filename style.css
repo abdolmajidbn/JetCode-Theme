@@ -235,9 +235,11 @@ a{
 .posts{
     display: flex;
     flex-direction: row;
-    margin: 0px 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 50px 0px;
+    margin: -50px 0;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100vw;
 }
 
 /* style card in recent_post section & blog page & category page */
@@ -246,7 +248,7 @@ a{
     background: var(--white);
     box-shadow: 0px 10px 40px rgba(59, 59, 60, 0.1);
     border-radius: 8px;
-    width: 32%;
+    min-width: 350px;
     margin-left: 11px;
     margin-right: 11px;
 }
@@ -948,7 +950,28 @@ footer .links a{
     .intro .title{
         margin-top: 32px;
     }
-
+    .recent_post{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        bottom: 229px;
+    }
+    .recent_post .title{
+        margin-top: 250px;
+    }
+    .recent_post .posts {
+        flex-wrap: nowrap;
+        width: 100vw;
+        overflow-x: scroll;
+        justify-content: unset;
+    }
+    .recent_post .card{
+        margin-left: 15px;
+        margin-bottom: 20px;
+        min-width: 350px;
+    }
+    .tutorials{
+        margin-top: -473px;
+    }
     .tutorials .container{
         flex-wrap: wrap-reverse;
         row-gap: 40px;
@@ -972,7 +995,7 @@ footer .links a{
     /* about in tablet */
     .about{
         background-image: url(images/About_Background_mobile.png);
-        padding: 0px 0px 100px 0px;
+        padding: 0px 0px 200px 0px;
         background-size: 100% 100%;
         width: 100%;
     }
