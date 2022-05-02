@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 :root {
     --dark: rgba(49, 46, 46, 1);
     --dark80: rgba(30, 28, 28, 0.8);
@@ -782,21 +783,41 @@ aside .widget {
 
 /* start 404 page */
 .page_404{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFBA08;
 }
-.page_404 img{
-    width: 50%;
+.title_404{
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 216px;
+    line-height: 324px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.49) 84.37%, rgba(0, 0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;    
 }
+.description_404{
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(50, 48, 48, 0) 0%, #323030 72.4%, #323030 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: -86px;
+}
+
 .page_404 a{
-    background-color: #50CC84;
-    color: var(--white);
-    padding: 9px 16px;
-    border-radius: 5px;
-    margin-top: 40px;
+    font-size: 36px;
+    text-align: center;
+    border-bottom: 2px dotted #323030;
+    color: #323030;
+    margin-top: 32px;
 }
 /* end 404 page */
 
@@ -1268,6 +1289,24 @@ footer .links a{
         box-shadow: 0px 4px 25px #000000;
     }
     /* end podcasts page */
+ 
+    /* 404 page */
+    .title_404{
+        font-size: 72px;
+        line-height: 108px;
+    }
+    .description_404{
+        font-size: 24px;
+        line-height: 38px;
+        margin-top: -29px;
+    }
+
+    .page_404 a{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /* end 404 page */
+
     /* post page */
     .post_container{
         padding: 10px;
