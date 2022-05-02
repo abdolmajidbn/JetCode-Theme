@@ -240,7 +240,11 @@ a{
     margin: -50px 0;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    width: 100vw;
+    width: 100%;
+}
+
+.posts::-webkit-scrollbar {
+    display: none;
 }
 
 /* style card in recent_post section & blog page & category page */
