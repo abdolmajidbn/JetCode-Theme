@@ -222,7 +222,7 @@ a{
     flex-direction: row;
     margin: 0px 40px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /* style card in recent_post section & blog page & category page */
@@ -232,6 +232,8 @@ a{
     box-shadow: 0px 10px 40px rgba(59, 59, 60, 0.1);
     border-radius: 8px;
     width: 32%;
+    margin-left: 11px;
+    margin-right: 11px;
 }
 
 .overlay{
@@ -1091,6 +1093,7 @@ footer .links a{
     .card{
         width: auto;
         min-width: 250px;
+        margin: unset;
         box-shadow: 0px 10px 15px rgb(59 59 60 / 10%);
     }
     .card:last-child{
