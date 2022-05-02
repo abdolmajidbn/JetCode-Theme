@@ -292,6 +292,10 @@ a{
     margin-left: 10px
 }
 .card_title{
+    color: var(--dark);
+    margin: 15px 12px;
+    font-size: 20px;
+    min-height: 76px;
     font-weight: 700;
     line-height: 38px;
     text-align: right;
@@ -299,13 +303,6 @@ a{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-}
-.recent_post .card_title{
-    color: var(--white);
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
-    font-size: 24px;
 }
 .card_footer{
     padding: 10px 12px 15px 0px;
@@ -396,14 +393,6 @@ select.order{
 {
     margin-bottom: 90px;
     height: fit-content;
-}
-.blog_container .card_title,
-.category_container .card_title{
-    color: var(--dark);
-    margin: 15px 12px;
-    font-size: 20px;
-    min-height: 76px;
-
 }
 .blog_container .btn,
 .category_container .btn
@@ -863,7 +852,7 @@ footer section{
     column-gap: 100px;
 }
 footer .widget{
-    width: 31%;
+    width: clamp(250px,33%,350px);
 }
 footer .widget .title{
     color: var(--white);
@@ -966,7 +955,6 @@ footer .links a{
     }
     .recent_post .card{
         margin-left: 15px;
-        margin-bottom: 20px;
         min-width: 350px;
     }
     .tutorials{
@@ -1047,6 +1035,76 @@ footer .links a{
 
     }
     /* end about in tablet */
+
+    /* podcasts page */
+    .podcast_container{
+        padding: 0px;
+    }
+    .podcast_container .title{
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+        margin: 15px auto 7px auto;
+    }
+    .podcast_container .description{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0px 25px 16px 25px;
+    }
+    .podcast_container .icons{
+        margin-bottom: 20px;
+        padding: 0px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .podcast_container .btn{
+        font-size: 14px;
+        margin: 0px auto 37px auto;
+        font-weight: 500;
+    }
+    .podcast_container .row{
+        align-items: unset;
+        flex-wrap: wrap-reverse;
+    }
+    .podcast_container .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .podcast_container .microphone{
+        width: fit-content;
+        align-self: flex-end;
+        margin-left: 25px;
+        max-width: 95px;
+
+    }
+    .podcast_container .left img:last-child{
+        margin: 0px auto;
+        max-width: 50%;
+    }
+    .podcast_frame{
+        margin: 0px;
+        padding: 0px 24px 37px 24px;
+    }
+    .podcast_frame iframe{
+        box-shadow: 0px 4px 25px #000000;
+    }
+    .podcast_container .right{
+        width: 80%;
+        margin: auto;
+    }
+    /* end podcasts page */
+
+    footer .widget .title{
+        font-size: 20px;
+    }
+    footer .widget p, footer .widget a{
+        font-size: 18px;
+    }
+ 
 }
 
 @media screen and (max-width: 479px){
@@ -1195,6 +1253,7 @@ footer .links a{
     .recent_post .card{
         margin-left: 15px;
         margin-bottom: 20px;
+        min-width: 250px;
     }
     /* end recent_post */
     /* start post & card in (recent_post & post page & category page) */
@@ -1232,23 +1291,6 @@ footer .links a{
     .card_header img{
         height: 189px;
     }
-    .recent_post .card_title{
-        font-size: 16px;
-    }
-    .blog_container .card_title, .category_container .card_title{
-        font-size: 16px;
-        min-height: unset;
-        margin: 0px 0px 15px 0px;
-    }
-    .card_title{
-        line-height: 25px;
-        font-weight: 400;
-    }
-    .card_body .description{
-        font-size: 12px;
-        line-height: 19px;
-        margin: 0px 0px 15px 0px;
-    }
     .card_footer{
         padding: 0px 10px 10px 0px;
     }
@@ -1269,7 +1311,7 @@ footer .links a{
         padding: 0px;
     }
     .tutorials .title{
-        margin: 30px auto;
+        margin: 90px auto;
         text-align: center;
         font-size: 25px;
     }
