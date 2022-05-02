@@ -1111,7 +1111,7 @@ footer .links a{
     }
     .blog_container .card_title, .category_container .card_title{
         font-size: 16px;
-        min-height: 50px;
+        min-height: unset;
         margin: 0px 0px 15px 0px;
     }
     .card_title{
