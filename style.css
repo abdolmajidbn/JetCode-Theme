@@ -62,6 +62,10 @@ header{
     margin-left: 32px;
 }
 
+.menu ul li a{
+    transition: color 0.4s;
+}
+
 .menu ul li a:hover{
     color: var(--light_blue);
 }
