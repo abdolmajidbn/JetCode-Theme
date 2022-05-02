@@ -178,28 +178,32 @@ a{
     flex-direction: row;
 }
 .about .btn_resume{
+    min-height: 45px;
     background-color: var(--dark1);
     color: var(--white);
     border-radius: 5px;
     padding: 2px 12px;
     font-size: 18px;
     font-weight: 700;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
     width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 .about .btn_resume img{
     margin-left: 10px;
 }
 
 .about .btn_connection{
+    min-height: 45px;
     border: solid 1px var(--dark1);
     border-radius: 5px;
     padding: 2px 12px;
     margin-right: 10px;
     font-size: 18px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 /* end about */
