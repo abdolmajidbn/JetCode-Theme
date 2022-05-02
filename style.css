@@ -258,7 +258,7 @@ a{
     border-radius: 8px 8px 0px 0px;
 }
 .card_body{
-    border-bottom: 1px solid rgba(181, 165, 165, 0.58);
+    border-bottom: 1px solid var(--white80);
 }
 .card_body section{
     margin: 22px 10px 15px 0px;
@@ -272,7 +272,7 @@ a{
     color: var(--dark70);
 }
 .badge{
-    background-color: #E3E3E3;
+    background-color: var(--white80);
     color: var(--dark80);
     padding: 2px 10px;
     border-radius: 10px;
@@ -404,7 +404,7 @@ select.order{
 
 /* stat tutorials */
 .tutorials{
-    background-color: rgba(251, 251, 251, 1);
+    background-color: var(--bg_light2);
     margin-top: -443px;
     padding: 182px 0px;
 }
@@ -458,7 +458,7 @@ select.order{
 }
 
 .tutorial .price_tag{
-    color: #6C63FF;
+    color: var(--light_blue);
     padding:0px 8px 0px 0px;
     font-weight: 700;
     font-size: 16px;
@@ -507,14 +507,14 @@ select.order{
 .podcast_container .title{
     font-weight: 400;
     font-size: 50px;
-    color: #e0e0e0;
+    color: var(--white80);
     margin-bottom: 34px;
 }
 .podcast_container .description{
     font-weight: 500;
     font-size: 24px;
     line-height: 38px;
-    color: #e0e0e0;
+    color: var(--white80);
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -679,7 +679,7 @@ select.order{
     display: initial;
     max-width: 456px;
     min-width: 256px;
-    background-color: #f9f9f9;
+    background-color: var(--smoke_white);
     box-shadow: 0px 4px 30px rgb(204 204 204 / 70%);
     border-radius: 10px;
     padding: 13px 20px;
@@ -798,7 +798,7 @@ aside .widget {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #FFBA08;
+    background: var(--yellow);
 }
 .title_404{
     font-family: 'Poppins';
@@ -824,8 +824,8 @@ aside .widget {
 .page_404 a{
     font-size: 36px;
     text-align: center;
-    border-bottom: 2px dotted #323030;
-    color: #323030;
+    border-bottom: 2px dotted var(--dark80);
+    color: var(--dark80);
     margin-top: 32px;
 }
 /* end 404 page */
@@ -1138,7 +1138,7 @@ footer .links a{
     }
     .card_footer .veiw{
         font-size: 12px;
-        color: rgba(84, 84, 84, 1);
+        color: var(--dark80);
     }
     .card_footer .veiw::before{
         content: url(images/Eye_mobile.png);
