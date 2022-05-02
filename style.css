@@ -133,6 +133,13 @@ a{
     margin-right: 16px;
     font-weight: bold;
 }
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 /* end intro */
 
 /* start about */
@@ -917,6 +924,31 @@ footer .links a{
 
 }
 @media screen and (max-width: 992px){
+
+    .intro{
+        flex-direction: column-reverse;
+        align-items: center;
+        overflow: inherit;
+        margin-top: 68px;
+    }    
+
+    .intro .left{
+        left: auto;
+        margin: 0px auto;
+    }
+    .intro .right{
+        margin: auto;
+    }
+
+    .intro .row{
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .intro .title{
+        margin-top: 32px;
+    }
+
     .tutorials .container{
         flex-wrap: wrap-reverse;
         row-gap: 40px;
@@ -936,6 +968,62 @@ footer .links a{
     .contact{
         margin: 0px 50px;
     }
+
+    /* about in tablet */
+    .about{
+        background-image: url(images/About_Background_mobile.png);
+        padding: 0px 0px 100px 0px;
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .about .title{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+    .about .description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+        margin-bottom: 25px;
+    }
+    .about .row{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0px 16px;
+    }
+    .about .right{
+        max-height: 200px;
+        margin: 54px auto 16px auto;
+    }
+
+    .about .left{
+        width: auto;
+        margin: auto;
+    }
+    .about .btns{
+        justify-content: center;
+    }
+    .about .btn_resume{
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .about .btn_resume img {
+        margin-left: 5px;
+    }
+    .about .btn_connection{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 16px;
+
+    }
+    /* end about in tablet */
 }
 
 @media screen and (max-width: 479px){
@@ -975,6 +1063,7 @@ footer .links a{
     }
     .intro .title{
         font-size: 20px;
+        margin-top: 16px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -1007,7 +1096,7 @@ footer .links a{
     .about{
         background-image: url(images/About_Background_mobile.png);
         padding: 0px 0px 100px 0px;
-        background-size: cover;
+        background-size: 100% 100%;
         width: 100%;
     }
     .about .title{
