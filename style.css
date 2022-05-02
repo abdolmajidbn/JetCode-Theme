@@ -639,8 +639,11 @@ select.order{
 }
 .comment_form .row:last-child {
     flex-direction: row-reverse !important;
-}
 
+}
+.comment_form .btn{
+    margin-left: 22px;
+}
 .comment_form .btn,
 .more_comment_btn
 {
@@ -1337,9 +1340,21 @@ footer .links a{
         padding: 20px;
         line-height: 25px;
     }
+    .comment_form{
+        padding: 34px 15px 0px 15px;
+        font-size: 16px;
+        line-height: 25px;    
+    }
+    .comment_form input, textarea{
+        margin: 0 10px 0 0;
+    }
     .comment_form form{
         width: 100%;
     }
+    .comment_form .btn{
+        margin-left: unset;
+    }
+    .comment_date{display: none;}
     .comments{
         margin: 0px 5px;
     }
