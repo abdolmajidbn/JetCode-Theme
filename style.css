@@ -1024,6 +1024,69 @@ footer .links a{
 
     }
     /* end about in tablet */
+
+    /* podcasts page */
+    .podcast_container{
+        padding: 0px;
+    }
+    .podcast_container .title{
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+        margin: 15px auto 7px auto;
+    }
+    .podcast_container .description{
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0px 25px 16px 25px;
+    }
+    .podcast_container .icons{
+        margin-bottom: 20px;
+        padding: 0px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .podcast_container .btn{
+        font-size: 14px;
+        margin: 0px auto 37px auto;
+        font-weight: 500;
+    }
+    .podcast_container .row{
+        align-items: unset;
+        flex-wrap: wrap-reverse;
+    }
+    .podcast_container .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .podcast_container .microphone{
+        width: fit-content;
+        align-self: flex-end;
+        margin-left: 25px;
+        max-width: 95px;
+
+    }
+    .podcast_container .left img:last-child{
+        margin: 0px auto;
+        max-width: 50%;
+    }
+    .podcast_frame{
+        margin: 0px;
+        padding: 0px 24px 37px 24px;
+    }
+    .podcast_frame iframe{
+        box-shadow: 0px 4px 25px #000000;
+    }
+    .podcast_container .right{
+        width: 80%;
+        margin: auto;
+    }
+    /* end podcasts page */
+ 
 }
 
 @media screen and (max-width: 479px){
