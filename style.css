@@ -1097,12 +1097,34 @@ footer .links a{
         margin: auto;
     }
     /* end podcasts page */
-
+    
     footer .widget .title{
         font-size: 20px;
     }
     footer .widget p, footer .widget a{
         font-size: 18px;
+    }
+
+    .post_container .wrapper{
+        flex-wrap: wrap;
+    }
+
+    .post_container article{
+        max-width: 100%;
+        margin-bottom: 32px;
+        margin-left: 0px;
+    }
+
+    .post_container aside{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .post_container aside .widget{
+        width: clamp(300px, calc(50% - 50px), 600px);
     }
  
 }
