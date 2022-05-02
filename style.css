@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 :root {
-    --dark: rgba(49, 46, 46, 1);
-    --dark80: rgba(30, 28, 28, 0.8);
-    --dark70:rgba(30, 28, 28, 0.7);
-    --dark1:rgba(30, 28, 28, 1);
+    --dark: #312e2e;
+    --dark80: #4b4949;
+    --dark70: #625f5d;
+    --dark1: #1e1c1c;
     --light_blue: #7c96f7;
     --yellow: #ffba08;
     --white: #ffffff;
-    --bg_light: rgba(236, 236, 236, 1);
+    --bg_light: #ececec;
     --bg_light2:#fbfbfb;
     --smoke_white: #F0F0F0;
-    --white80:rgba(255, 255, 255, 0.8);
+    --white80: #ffffffcc;
 }
 @font-face {
     font-family: samim;
@@ -1129,10 +1129,8 @@ footer .links a{
         font-weight: 400;
     }
     .card_body .description{
-        font-weight: 400;
         font-size: 12px;
         line-height: 19px;
-        color: #545454;
         margin: 0px 0px 15px 0px;
     }
     .card_footer{
