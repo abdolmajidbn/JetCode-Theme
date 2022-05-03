@@ -143,7 +143,7 @@ a{
     padding: 9px 43px;
     font-size: 24px;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 500;
     
 }
 
@@ -154,7 +154,7 @@ a{
     padding: 9px 16px;
     border-radius: 5px;
     margin-right: 16px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .btn{
@@ -215,7 +215,7 @@ a{
     border-radius: 5px;
     padding: 2px 12px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     width: fit-content;
     display: flex;
     flex-direction: row-reverse;
@@ -235,7 +235,7 @@ a{
     padding: 2px 12px;
     margin-right: 10px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     display: flex;
     align-items: center;
 }
@@ -327,7 +327,7 @@ a{
     margin: 15px 12px;
     font-size: 20px;
     min-height: 76px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 38px;
     text-align: right;
     display: -webkit-box;
@@ -353,7 +353,7 @@ a{
     padding: 13px 35px;
     background-color: var(--dark1);
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     margin: 90px 0px 200px 0px;
 }
@@ -390,7 +390,7 @@ a{
     height: 250px;
     border-radius: 32px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
 }
 .custom_btns a:last-child{
     margin-left: 0px !important;
@@ -520,7 +520,7 @@ select.order{
 }
 .tutorial_title {
     margin: 8px 8px 8px 0px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24px;
     color: var(--dark1);
 }
@@ -528,7 +528,7 @@ select.order{
 .tutorial .price_tag{
     color: var(--light_blue);
     padding:0px 8px 0px 0px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -595,7 +595,7 @@ select.order{
 {
     color:var(--dark1);
     background-color: var(--yellow);
-    font-weight: bold;
+    font-weight: 500;
     font-size: 24px;
     padding: 10px;
     display: flex;
@@ -723,7 +723,7 @@ select.order{
     font-size: 14px;
     min-height: 38px;
     background-color: var(--yellow);
-    font-weight: bold;
+    font-weight: 500;
     color: var(--dark80);
     border: unset;
     border-radius: 5px;
