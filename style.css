@@ -1382,9 +1382,6 @@ footer .links a{
         margin: 0 0 0 16px;
         box-shadow: 0px 10px 15px rgb(59 59 60 / 10%);
     }
-    .card:last-child{
-        margin-left: 0px;
-    }
     .card_body{
         padding: 0px 10px 0px 10px;
     }
@@ -1441,6 +1438,9 @@ footer .links a{
         align-content: unset;
         overflow-x: scroll;
         padding: 45px 16px;
+    }
+    .mini_cards::-webkit-scrollbar {
+        display: none;
     }
     .tutorial{
         min-width: 250px;
