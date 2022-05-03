@@ -143,6 +143,7 @@ a{
 /* start about */
 .about{
     background-image: url(images/About_Background.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 450px;
     margin-top: 40px;
