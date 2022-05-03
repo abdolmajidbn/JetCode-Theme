@@ -1275,14 +1275,16 @@ footer .links a{
     }
     .about .title{
         font-size: 25px;
+        text-align: right;
         font-weight: 700;
         margin-bottom: 8px;
     }
     .about .description{
+        max-width: initial;
         font-weight: 400;
         font-size: 16px;
         line-height: 25px;
-        /* text-align: right; */
+        text-align: justify;
         margin-bottom: 25px;
     }
     .about .row{
