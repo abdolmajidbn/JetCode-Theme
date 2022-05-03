@@ -245,6 +245,7 @@ a{
 /* start blog home page */
 .recent_post{
     background-image: url(images/Wave\ Background.png);
+    background-size: 100% 100%;
     position: relative;
     bottom: 250px;
     display: flex;
@@ -280,8 +281,8 @@ a{
     box-shadow: 0px 10px 40px rgba(59, 59, 60, 0.1);
     border-radius: 8px;
     min-width: 350px;
-    margin-left: 11px;
-    margin-right: 11px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .overlay{
@@ -327,7 +328,7 @@ a{
     margin: 15px 12px;
     font-size: 20px;
     min-height: 76px;
-    font-weight: 500;
+    font-weight: normal;
     line-height: 38px;
     text-align: right;
     display: -webkit-box;
@@ -341,7 +342,7 @@ a{
 .card_footer .veiw{
     color: var(--dark80);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
 }
 .card_footer .veiw::before{
     content: url(images/Eye.png);
@@ -429,7 +430,7 @@ select.order{
 }
 .posts_category_title{
     display: inline-block;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 32px;
     line-height: 50px;
     color: #323030;
@@ -446,7 +447,8 @@ select.order{
 
 .category_posts{
     margin-top: 64px;
-    margin-bottom: 64px;
+    /* margin-bottom: 64px; */
+    margin-bottom: 127px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -473,7 +475,7 @@ select.order{
 /* stat tutorials */
 .tutorials{
     background-color: var(--bg_light2);
-    margin-top: -443px;
+    margin-top: -490px;
     padding: 182px 0px;
 }
 .tutorials .title{
@@ -1020,7 +1022,7 @@ footer .links a{
         justify-content: unset;
     }
     .recent_post .card{
-        margin-left: 15px;
+        margin-left: 16px;
         min-width: 350px;
     }
     .tutorials{
@@ -1200,7 +1202,7 @@ footer .links a{
         height: 189px;
     }
     .badge{
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 400;
         margin-left: 5px;
     }
@@ -1339,12 +1341,16 @@ footer .links a{
         overflow-x: scroll;
     }
     .recent_post .card{
-        margin-left: 15px;
+        margin-left: 8px;
         margin-bottom: 20px;
         min-width: 250px;
     }
     /* end recent_post */
     /* start post & card in (recent_post & post page & category page) */
+    .posts_category_title{
+        margin-right: 16px;
+        font-size: 25px;
+    }
     .category_container .title{
         margin-bottom: 32px;
         margin-right: 16px;
@@ -1358,18 +1364,23 @@ footer .links a{
     .blog_container .card, .category_container .card{
         width: 100%;
     }
+    .category_posts .card{
+        margin-bottom: unset;
+        margin-right: 16px;
+        margin-left: 16px !important;
+    }
+    .posts_by_category{margin-right: 16px;}
 
     .card{
         width: auto;
         min-width: 250px;
-        /* margin: unset; */
+        margin: 0 0 0 16px;
         box-shadow: 0px 10px 15px rgb(59 59 60 / 10%);
     }
     .card:last-child{
         margin-left: 0px;
     }
     .card_body{
-        border-bottom: unset;
         padding: 0px 10px 0px 10px;
     }
     .card_body section{
@@ -1378,11 +1389,8 @@ footer .links a{
     .card_header img{
         height: 189px;
     }
-    .card_footer{
-        padding: 0px 10px 10px 0px;
-    }
     .card_footer .veiw{
-        font-size: 12px;
+        font-size: 16px;
         color: var(--dark80);
     }
     .card_footer .veiw::before{
