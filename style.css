@@ -65,7 +65,7 @@ body{
 .bg_white{
     background-color: var(--white) !important;
 }
-
+nav.bottom_nav_bar{display: none;}
 /*stat header*/
 header{
     min-height: 232px;
@@ -1688,4 +1688,69 @@ footer .links a{
     }
     /*end footer*/
 
+    /* bottom navigation bar */
+    nav.bottom_nav_bar{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 8px;
+        height: 71px;
+        background-color: var(--light_blue);
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 32px;
+        box-shadow: 0px 0px 8px rgba(30, 28, 28, 0.2);
+    }
+    nav.bottom_nav_bar .row.icons{
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    nav.bottom_nav_bar a span{
+        color: var(--white);
+        margin-top: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+    }
+    .navbar_icon{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .container{
+        width: initial;
+    }
+    .container:not(.active){
+        width: initial;
+    }
+    .container{
+        transition: all 3s;
+    }
+    .navbar_icon .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar_icon .container{
+        transition: all 1s;
+        width: 64px;
+        background-color: transparent;
+    }
+    .navbar_icon .container.active{
+        width: 64px;
+        background: #536bc4;
+        border-radius: 8px;
+        padding: 4px 0px 4px 0px;
+    }
+    .navbar_icon img{
+        width: 32px;
+        height: 32px;
+        margin: auto;
+    }
+    /* end bottom navigation bar */
 }
