@@ -480,7 +480,7 @@ select.order{
 /* stat tutorials */
 .tutorials{
     background-color: var(--bg_light2);
-    margin-top: -490px;
+    margin-top: -500px;
     padding: 182px 0px;
 }
 .tutorials .title{

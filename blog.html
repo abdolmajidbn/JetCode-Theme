@@ -7,6 +7,8 @@
     <title>وبلاگ</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 </head>
 <body class="bg_light">
     <main>
@@ -399,5 +401,18 @@
         </nav>
 
     </main>
+    <script>
+        
+        new Glider(document.querySelector('.posts_by_category'), {
+        slidesToShow: 3,
+        slidesToScroll: 'auto',
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        }
+        });
+    </script>
 </body>
 </html>

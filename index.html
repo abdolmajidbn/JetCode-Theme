@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <script src="script.js"></script>
     <title>home</title>
 </head>
@@ -331,5 +333,17 @@
         </nav>
 
     </main>
+    <script>
+        new Glider(document.querySelector('.posts'), {
+        slidesToShow: 3,
+        slidesToScroll: 'auto',
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        }
+        });
+    </script>
 </body>
 </html>
